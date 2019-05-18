@@ -245,8 +245,16 @@
                         <viewLayoutGuide key="safeArea" id="R4q-3e-HIQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="a5V-mV-WsI">
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="08b-Tx-gFK"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="08b-Tx-gFK">
+                            <connections>
+                                <action selector="btnSelecionarFoto:" destination="F0B-dL-xyu" id="fxQ-66-noS"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="campoDescricao" destination="IkO-eX-cfN" id="i9v-eo-Wjy"/>
+                        <outlet property="imageView" destination="p1B-tK-FJu" id="NOA-HQ-hUA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8S4-78-ih6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
