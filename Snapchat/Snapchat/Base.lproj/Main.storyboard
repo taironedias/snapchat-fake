@@ -229,6 +229,7 @@
                                 </state>
                                 <connections>
                                     <action selector="btnCriarConta:" destination="Ymb-vp-T5T" eventType="touchUpInside" id="7vo-7d-e6J"/>
+                                    <action selector="btnProximo:" destination="F0B-dL-xyu" eventType="touchUpInside" id="tae-kP-v3W"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -252,6 +253,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="botaoProximo" destination="xpm-uJ-Q3s" id="Zg1-dV-khs"/>
                         <outlet property="campoDescricao" destination="IkO-eX-cfN" id="i9v-eo-Wjy"/>
                         <outlet property="imageView" destination="p1B-tK-FJu" id="NOA-HQ-hUA"/>
                     </connections>
