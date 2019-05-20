@@ -1,2 +1,2 @@
 # snapchat-fake
-Create a snapchat fake app for iOS learning.
+Creating a snapchat fake app for iOS learning.
