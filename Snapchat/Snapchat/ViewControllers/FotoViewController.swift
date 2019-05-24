@@ -28,8 +28,14 @@ class FotoViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
 
     @IBAction func btnSelecionarFoto(_ sender: Any) {
+        // Para o dispositivo real, é interessante colocar .camera OBS.: deve-se colocar a permisão em Info.plist
         imagePicker.sourceType = .savedPhotosAlbum
         present(imagePicker, animated: true, completion: nil)
+    }
+    
+    // A função abaixo serve para o teclado do dispositivo desaparecer quando é clicado em qualquer área
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
     
     @IBAction func btnProximo(_ sender: Any) {

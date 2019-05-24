@@ -102,6 +102,8 @@ class UsersTableViewController: UITableViewController {
             
             // Por fim, setamos como new value essas informações
             snapsUser.setValue(snap)
+            
+            self.navigationController?.popToRootViewController(animated: true)
         }
         
     }
